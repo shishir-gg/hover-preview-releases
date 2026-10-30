@@ -6,6 +6,11 @@
           "version": "1.2.0",
           "update_link": "https://shishir-gg.github.io/hover-preview-releases/files/hover-preview-1.2.0.xpi",
           "update_hash": "sha256:896a118bdb8f8fdb576de36f3d2ef3e2fc88518c0b7cf8558f1ffdebb70d4ed5"
+        },
+        {
+          "version": "1.2.1",
+          "update_link": "https://shishir-gg.github.io/hover-preview-releases/files/hover-preview-1.2.1.xpi",
+          "update_hash": "sha256:63688d377f1f3f9d9c120632b8a016800eaf8b6afe28b7227801b9304faa6fba"
         }
       ]
     }
