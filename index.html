@@ -1,0 +1,15 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hover Preview</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem}a.btn{display:inline-block;padding:.6rem 1rem;background:#ff4500;color:#fff;border-radius:6px;text-decoration:none}</style>
+<h1>Hover Preview</h1>
+<p>Imagus-style hover previews for Firefox. Click to install, then click <b>Add</b>. It updates itself.</p>
+<p><a class="btn" id="dl" href="#">Install</a> <span id="ver"></span></p>
+<script>
+fetch('updates.json').then(r => r.json()).then(u => {
+  const list = Object.values(u.addons)[0].updates, last = list[list.length - 1];
+  document.getElementById('dl').href = last.update_link;
+  document.getElementById('ver').textContent = 'version ' + last.version;
+});
+</script>
